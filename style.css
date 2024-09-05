@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:none;
+    overflow: hidden;
+  
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #a9916d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(149, 136, 112);
+    color: white;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:orange;
+    color: beige;
+  }
+.container{
+    width: 100%;
+    height: 100vh;
+  ;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contant{
+    text-align: center;
+    color: #fff;
+margin-bottom: 50px;
+}
+.contant h1{
+    font-size: 100px;
+    color: #fff;
+    margin-bottom: 50px;
+    opacity: 85%;
+}
+.contant a{
+    font-size: 23px;
+    color: wheat;
+    text-decoration:none;
+    border: 2px solid wheat;
+    padding: 15px 25px;
+    border-radius: 50px;
+transition: 0.3s;
+}
+.contant a:hover{
+    background-color:rgb(155, 114, 49) ;
+}
+.backvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    .backvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .backvideo{
+        width: auto;
+        height: 100%;
+    }
+}
